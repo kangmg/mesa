@@ -63,7 +63,11 @@ for e in entries:
    candidates are near-degenerate (e.g. within ~0.01 eV/atom) but differ in
    space group, do not auto-pick — stop and record the tie for the user to resolve.
 5. If supplied XRD peak positions are available, compare them with simulated
-   peaks from the candidate structures. Report any remaining ambiguity.
+   peaks from each ambiguous candidate. Prefer the candidate that matches and
+   record the comparison and source values.
+6. If formation energies and XRD do not resolve the choice, report the
+   ambiguity. If multiple candidates are carried forward, save each bulk
+   structure and its metadata separately.
 
 Record every candidate considered and the explicit selection reason,
 regardless of outcome. Do not let slab generation silently choose a different
@@ -80,7 +84,7 @@ setup may use these as initial magnetic moments.
    - Materials Project: fetch and select per **Materials Project Retrieval**.
    - Local/code-generated: copy or link the exact source artifact into the
      requested output directory.
-   - No importable source: create the bulk cell directly from recipe-provided
+   - No importable source: create the bulk cell directly from supplied
      crystallographic instructions (see **Direct Bulk Creation**). Do not
      guess missing lattice, prototype, site, oxidation-state, or magnetic
      information.

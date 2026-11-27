@@ -85,8 +85,6 @@ def main(argv: list[str] | None = None) -> int:
 
     reaction = json.loads(args.reaction.read_text(encoding="utf-8"))
     mapping = json.loads(args.mapping.read_text(encoding="utf-8"))
-    for entry in mapping["entries"]:
-        entry["outcar"] = str(args.mapping.parent / entry["outcar"])
 
     energies = run(reaction, mapping)
     args.output.parent.mkdir(parents=True, exist_ok=True)

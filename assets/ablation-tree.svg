@@ -63,7 +63,7 @@
     <text x="22" y="923">      │     ├── <tspan class="modified">(m) relax-uma-trajectory/</tspan></text>
     <text x="22" y="945">      │     ├── <tspan class="modified">(m) calculate-uma-vibrational-frequencies/</tspan></text>
     <text x="22" y="967">      │     ├── <tspan class="modified">(m) manage-vasp-jobs/</tspan></text>
-    <text x="22" y="989">      │     ├── <tspan class="modified">(m) vasp-lab-job/</tspan></text>
+    <text x="22" y="989">      │     ├── <tspan class="retained">vasp-lab-job/</tspan></text>
     <text x="22" y="1011">      │     ├── <tspan class="neutral">analyze-relaxation-results/</tspan></text>
     <text x="22" y="1033">      │     │     ├── <tspan class="modified">(m) SKILL.md</tspan></text>
     <text x="22" y="1055">      │     │     └── <tspan class="deleted">(d) scripts/gate_calculation_evidence.py</tspan></text>

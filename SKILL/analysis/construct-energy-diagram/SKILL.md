@@ -34,8 +34,8 @@ mamba run -n modeling python -m MYSKILL.tools.start \
 ```
 
 The runner reads the two supplied JSON files and the OUTCAR paths declared
-inside `map.json`. Relative OUTCAR paths are resolved from the mapping file's
-directory.
+inside `map.json`. Relative OUTCAR paths are resolved from the current
+working directory.
 
 ⸻
 

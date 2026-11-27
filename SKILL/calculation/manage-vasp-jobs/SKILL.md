@@ -33,17 +33,27 @@ code — read `error`, fix the spec, and retry.
 
 ## Calculation policy
 
-Use these settings when preparing VASP inputs:
+Actual VASP calculations default to **refinement-oriented settings**, not light
+screening. VASP jobs are expensive and must come after structure-generation
+gates:
 
-1. Use the top-level values in [`defaults.yaml`](defaults.yaml) as the default
+1. Run slab termination screening first when a slab has multiple plausible
+   terminations, polar directions, asymmetric top/bottom layers, or
+   non-stoichiometric options.
+2. Run adsorption-site/adsorbate enumeration outside VASP first. Do not submit a
+   VASP job for every generated site or every reaction intermediate by default.
+3. Submit VASP only for a small selected set of structures. For broad
+   exploration, prefer structure generation plus metadata/geometry validation
+   first, then `vasp-job prepare` dry-runs for the selected candidates.
+4. Use the top-level values in [`defaults.yaml`](defaults.yaml) as the default
    refinement profile for actual calculations.
-2. Use `profile.screening` from `defaults.yaml` only when the user explicitly
+5. Use `profile.screening` from `defaults.yaml` only when the user explicitly
    asks for screening, quick comparison, rough triage, or low-cost geometry
    sanity checks. Report that the job is a screening job and should not be used
    as final adsorption/surface energy evidence.
-3. Never run `freq` by default. Frequency jobs are only for selected relaxed
+6. Never run `freq` by default. Frequency jobs are only for selected relaxed
    endpoints and require an explicit user request.
-4. For gas-phase molecules, use `build-gas-phase-models` first to create the
+7. For gas-phase molecules, use `build-gas-phase-models` first to create the
    isolated `20 20 21` Å orthorhombic POSCAR. Do not put gas structure generation in
    `build-slab-models`.
 
@@ -317,7 +327,9 @@ queue:
 ## Workflow
 
 1. (Optional) Learn the schema: `vasp-job schema`.
-2. Supply the structure and calculation settings in the job spec.
+2. Ensure upstream gates are complete: selected slab termination, selected
+   adsorption site/intermediate, atom count, fixed atoms, and structure
+   validation. Do not use VASP as the first filter over a large generated set.
 3. Write the spec to a file, e.g. `spec.yml`: choose minimal edit, refinement
    explicit by default for actual calculations, or screening explicit only when
    the user asked for quick screening/comparison. Set `task` only to `bulk`,
