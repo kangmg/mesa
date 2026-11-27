@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="647" height="2214" viewBox="0 0 647 2214" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" width="647" height="2258" viewBox="0 0 647 2258" role="img" aria-labelledby="title description">
   <title id="title">MESA ablation repository tree</title>
   <desc id="description">Red paths were deleted, blue paths were modified, and green paths are unchanged. Neutral branches and parent folders show the repository hierarchy.</desc>
   <style>
@@ -16,7 +16,7 @@
       .retained { fill: #7ee2a8; }
     }
   </style>
-  <rect class="background" x="0.5" y="0.5" width="646" height="2213" rx="8"/>
+  <rect class="background" x="0.5" y="0.5" width="646" height="2257" rx="8"/>
   <text x="22" y="32" class="deleted">(d) = deleted</text>
   <text x="176" y="32" class="modified">(m) = modified</text>
   <text x="344" y="32" class="retained">unchanged</text>
@@ -63,60 +63,62 @@
     <text x="22" y="923">      │     ├── <tspan class="modified">(m) relax-uma-trajectory/</tspan></text>
     <text x="22" y="945">      │     ├── <tspan class="modified">(m) calculate-uma-vibrational-frequencies/</tspan></text>
     <text x="22" y="967">      │     ├── <tspan class="modified">(m) manage-vasp-jobs/</tspan></text>
-    <text x="22" y="989">      │     ├── <tspan class="retained">vasp-lab-job/</tspan></text>
-    <text x="22" y="1011">      │     ├── <tspan class="modified">(m) analyze-relaxation-results/</tspan></text>
-    <text x="22" y="1033">      │     └── <tspan class="modified">(m) balance-reaction-pathway/</tspan></text>
-    <text x="22" y="1055">      ├── <tspan class="neutral">analysis/</tspan></text>
-    <text x="22" y="1077">      │     ├── <tspan class="deleted">(d) workflow.md</tspan></text>
-    <text x="22" y="1099">      │     ├── <tspan class="modified">(m) construct-energy-diagram/</tspan></text>
-    <text x="22" y="1121">      │     ├── <tspan class="modified">(m) evaluate-energy-diagram/</tspan></text>
-    <text x="22" y="1143">      │     ├── <tspan class="retained">correct-dft-energy/</tspan></text>
-    <text x="22" y="1165">      │     ├── <tspan class="modified">(m) analyze-dband-center/</tspan></text>
-    <text x="22" y="1187">      │     ├── <tspan class="modified">(m) charge-flow-analyzer/</tspan></text>
-    <text x="22" y="1209">      │     └── <tspan class="modified">(m) assemble-alkaline-her-descriptors/</tspan></text>
-    <text x="22" y="1231">      ├── <tspan class="neutral">figure/</tspan></text>
-    <text x="22" y="1253">      │     ├── <tspan class="deleted">(d) workflow.md</tspan></text>
-    <text x="22" y="1275">      │     ├── <tspan class="modified">(m) plot-energy-diagram/</tspan></text>
-    <text x="22" y="1297">      │     ├── <tspan class="modified">(m) plot-dos/</tspan></text>
-    <text x="22" y="1319">      │     ├── <tspan class="modified">(m) plot-sabatier-volcano/</tspan></text>
-    <text x="22" y="1341">      │     ├── <tspan class="modified">(m) render-adsorbate-structure-grid/</tspan></text>
-    <text x="22" y="1363">      │     └── <tspan class="modified">(m) create-nature-figure/</tspan></text>
-    <text x="22" y="1385">      └── <tspan class="neutral">manuscript/</tspan></text>
-    <text x="22" y="1407">            ├── <tspan class="deleted">(d) workflow.md</tspan></text>
-    <text x="22" y="1429">            ├── <tspan class="modified">(m) akct/</tspan></text>
-    <text x="22" y="1451">            ├── <tspan class="modified">(m) si/</tspan></text>
-    <text x="22" y="1473">            ├── <tspan class="modified">(m) polish/</tspan></text>
-    <text x="22" y="1495">            ├── <tspan class="deleted">(d) figure/</tspan></text>
-    <text x="22" y="1517">            ├── <tspan class="deleted">(d) tests/</tspan></text>
-    <text x="22" y="1539">            ├── <tspan class="deleted">(d) shared/method_citations.py</tspan></text>
-    <text x="22" y="1561">            ├── <tspan class="modified">(m) review/</tspan></text>
-    <text x="22" y="1583">            ├── <tspan class="retained">shared/numeric_precision.py</tspan></text>
-    <text x="22" y="1605">            ├── <tspan class="neutral">general/</tspan></text>
-    <text x="22" y="1627">            │     ├── <tspan class="deleted">(d) extract-citation-sources/</tspan></text>
-    <text x="22" y="1649">            │     ├── <tspan class="deleted">(d) select-citations/</tspan></text>
-    <text x="22" y="1671">            │     ├── <tspan class="deleted">(d) insert-citations/</tspan></text>
-    <text x="22" y="1693">            │     └── <tspan class="modified">(m) insert-section-into-docx/SKILL.md</tspan></text>
-    <text x="22" y="1715">            ├── <tspan class="neutral">intro/</tspan></text>
-    <text x="22" y="1737">            │     ├── <tspan class="deleted">(d) collect-introduction-evidence/</tspan></text>
-    <text x="22" y="1759">            │     └── <tspan class="neutral">write-introduction-section/</tspan></text>
-    <text x="22" y="1781">            │           ├── <tspan class="deleted">(d) references/</tspan></text>
-    <text x="22" y="1803">            │           ├── <tspan class="deleted">(d) scripts/</tspan></text>
-    <text x="22" y="1825">            │           ├── <tspan class="modified">(m) SKILL.md</tspan></text>
-    <text x="22" y="1847">            │           └── <tspan class="modified">(m) agents/openai.yaml</tspan></text>
-    <text x="22" y="1869">            ├── <tspan class="neutral">methods/</tspan></text>
-    <text x="22" y="1891">            │     ├── <tspan class="deleted">(d) collect-methods-evidence/</tspan></text>
-    <text x="22" y="1913">            │     └── <tspan class="neutral">write-methods-sections/</tspan></text>
-    <text x="22" y="1935">            │           ├── <tspan class="deleted">(d) references/output_schema.md</tspan></text>
-    <text x="22" y="1957">            │           ├── <tspan class="deleted">(d) scripts/</tspan></text>
-    <text x="22" y="1979">            │           ├── <tspan class="modified">(m) SKILL.md</tspan></text>
-    <text x="22" y="2001">            │           ├── <tspan class="modified">(m) agents/openai.yaml</tspan></text>
-    <text x="22" y="2023">            │           └── <tspan class="retained">references/methods_formalism_guide.md</tspan></text>
-    <text x="22" y="2045">            └── <tspan class="neutral">results/</tspan></text>
-    <text x="22" y="2067">                  ├── <tspan class="deleted">(d) collect-results-evidence/</tspan></text>
-    <text x="22" y="2089">                  └── <tspan class="neutral">write-results-section/</tspan></text>
-    <text x="22" y="2111">                        ├── <tspan class="deleted">(d) references/</tspan></text>
-    <text x="22" y="2133">                        ├── <tspan class="deleted">(d) scripts/</tspan></text>
-    <text x="22" y="2155">                        ├── <tspan class="modified">(m) SKILL.md</tspan></text>
-    <text x="22" y="2177">                        └── <tspan class="modified">(m) agents/openai.yaml</tspan></text>
+    <text x="22" y="989">      │     ├── <tspan class="modified">(m) vasp-lab-job/</tspan></text>
+    <text x="22" y="1011">      │     ├── <tspan class="neutral">analyze-relaxation-results/</tspan></text>
+    <text x="22" y="1033">      │     │     ├── <tspan class="modified">(m) SKILL.md</tspan></text>
+    <text x="22" y="1055">      │     │     └── <tspan class="deleted">(d) scripts/gate_calculation_evidence.py</tspan></text>
+    <text x="22" y="1077">      │     └── <tspan class="modified">(m) balance-reaction-pathway/</tspan></text>
+    <text x="22" y="1099">      ├── <tspan class="neutral">analysis/</tspan></text>
+    <text x="22" y="1121">      │     ├── <tspan class="deleted">(d) workflow.md</tspan></text>
+    <text x="22" y="1143">      │     ├── <tspan class="modified">(m) construct-energy-diagram/</tspan></text>
+    <text x="22" y="1165">      │     ├── <tspan class="modified">(m) evaluate-energy-diagram/</tspan></text>
+    <text x="22" y="1187">      │     ├── <tspan class="retained">correct-dft-energy/</tspan></text>
+    <text x="22" y="1209">      │     ├── <tspan class="modified">(m) analyze-dband-center/</tspan></text>
+    <text x="22" y="1231">      │     ├── <tspan class="modified">(m) charge-flow-analyzer/</tspan></text>
+    <text x="22" y="1253">      │     └── <tspan class="modified">(m) assemble-alkaline-her-descriptors/</tspan></text>
+    <text x="22" y="1275">      ├── <tspan class="neutral">figure/</tspan></text>
+    <text x="22" y="1297">      │     ├── <tspan class="deleted">(d) workflow.md</tspan></text>
+    <text x="22" y="1319">      │     ├── <tspan class="modified">(m) plot-energy-diagram/</tspan></text>
+    <text x="22" y="1341">      │     ├── <tspan class="modified">(m) plot-dos/</tspan></text>
+    <text x="22" y="1363">      │     ├── <tspan class="modified">(m) plot-sabatier-volcano/</tspan></text>
+    <text x="22" y="1385">      │     ├── <tspan class="modified">(m) render-adsorbate-structure-grid/</tspan></text>
+    <text x="22" y="1407">      │     └── <tspan class="modified">(m) create-nature-figure/</tspan></text>
+    <text x="22" y="1429">      └── <tspan class="neutral">manuscript/</tspan></text>
+    <text x="22" y="1451">            ├── <tspan class="deleted">(d) workflow.md</tspan></text>
+    <text x="22" y="1473">            ├── <tspan class="modified">(m) akct/</tspan></text>
+    <text x="22" y="1495">            ├── <tspan class="modified">(m) si/</tspan></text>
+    <text x="22" y="1517">            ├── <tspan class="modified">(m) polish/</tspan></text>
+    <text x="22" y="1539">            ├── <tspan class="deleted">(d) figure/</tspan></text>
+    <text x="22" y="1561">            ├── <tspan class="deleted">(d) tests/</tspan></text>
+    <text x="22" y="1583">            ├── <tspan class="deleted">(d) shared/method_citations.py</tspan></text>
+    <text x="22" y="1605">            ├── <tspan class="modified">(m) review/</tspan></text>
+    <text x="22" y="1627">            ├── <tspan class="retained">shared/numeric_precision.py</tspan></text>
+    <text x="22" y="1649">            ├── <tspan class="neutral">general/</tspan></text>
+    <text x="22" y="1671">            │     ├── <tspan class="deleted">(d) extract-citation-sources/</tspan></text>
+    <text x="22" y="1693">            │     ├── <tspan class="deleted">(d) select-citations/</tspan></text>
+    <text x="22" y="1715">            │     ├── <tspan class="deleted">(d) insert-citations/</tspan></text>
+    <text x="22" y="1737">            │     └── <tspan class="modified">(m) insert-section-into-docx/SKILL.md</tspan></text>
+    <text x="22" y="1759">            ├── <tspan class="neutral">intro/</tspan></text>
+    <text x="22" y="1781">            │     ├── <tspan class="deleted">(d) collect-introduction-evidence/</tspan></text>
+    <text x="22" y="1803">            │     └── <tspan class="neutral">write-introduction-section/</tspan></text>
+    <text x="22" y="1825">            │           ├── <tspan class="deleted">(d) references/</tspan></text>
+    <text x="22" y="1847">            │           ├── <tspan class="deleted">(d) scripts/</tspan></text>
+    <text x="22" y="1869">            │           ├── <tspan class="modified">(m) SKILL.md</tspan></text>
+    <text x="22" y="1891">            │           └── <tspan class="modified">(m) agents/openai.yaml</tspan></text>
+    <text x="22" y="1913">            ├── <tspan class="neutral">methods/</tspan></text>
+    <text x="22" y="1935">            │     ├── <tspan class="deleted">(d) collect-methods-evidence/</tspan></text>
+    <text x="22" y="1957">            │     └── <tspan class="neutral">write-methods-sections/</tspan></text>
+    <text x="22" y="1979">            │           ├── <tspan class="deleted">(d) references/output_schema.md</tspan></text>
+    <text x="22" y="2001">            │           ├── <tspan class="deleted">(d) scripts/</tspan></text>
+    <text x="22" y="2023">            │           ├── <tspan class="modified">(m) SKILL.md</tspan></text>
+    <text x="22" y="2045">            │           ├── <tspan class="modified">(m) agents/openai.yaml</tspan></text>
+    <text x="22" y="2067">            │           └── <tspan class="retained">references/methods_formalism_guide.md</tspan></text>
+    <text x="22" y="2089">            └── <tspan class="neutral">results/</tspan></text>
+    <text x="22" y="2111">                  ├── <tspan class="deleted">(d) collect-results-evidence/</tspan></text>
+    <text x="22" y="2133">                  └── <tspan class="neutral">write-results-section/</tspan></text>
+    <text x="22" y="2155">                        ├── <tspan class="deleted">(d) references/</tspan></text>
+    <text x="22" y="2177">                        ├── <tspan class="deleted">(d) scripts/</tspan></text>
+    <text x="22" y="2199">                        ├── <tspan class="modified">(m) SKILL.md</tspan></text>
+    <text x="22" y="2221">                        └── <tspan class="modified">(m) agents/openai.yaml</tspan></text>
   </g>
 </svg>

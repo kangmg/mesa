@@ -58,13 +58,6 @@ dissociation, desorption, slab reconstruction, or fixed-layer failure.
 - optional `visual_review.json`
 - optional `selected_frames.extxyz`
 
-## Batch Gate
-
-- `pass` -> `accepted`
-- `warn` -> triage first, then `accepted-with-caveat`, `failed`, or `excluded`
-- `fail`, missing summary, or incomplete strict visual validation -> `failed`
-- registry `excluded` stays `excluded`
-
 ## Limited UMA Max-Step Continuation
 
 `scripts/decide_relaxation_revision.py` permits one automatic continuation only

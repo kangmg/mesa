@@ -13,8 +13,6 @@ in a slightly asymmetric orthorhombic cell, writes POSCAR and metadata, and stop
 
 Do not use this skill for slab generation, adsorbate placement on surfaces,
 calculation input generation, relaxation, static energies, or frequency calculations.
-Use the calculation workflow after this skill for calculation setup under the
-requested backend.
 
 ## Charge and Spin Boundary
 
@@ -31,9 +29,7 @@ set spin-related inputs without guessing:
 - a `dipole_hint` block flags likely-polar molecules (recommending
   a dipole correction in downstream calculation setup).
 
-The calculation workflow owns the final calculator-specific inputs. It may read
-`spin_reference`/`dipole_hint` and translate them for the requested backend. This skill never writes calculator execution
-inputs.
+Use `spin_reference` and `dipole_hint` when preparing inputs for the requested backend.
 
 ## Quick Start
 
@@ -78,7 +74,7 @@ mamba run -n modeling python scripts/build_gas_phase_model.py \
 4. Write POSCAR and JSON metadata.
 5. Validate atom count, cell size, and minimum intramolecular distance.
 6. Report paths and explicitly state that charge/spin and relax/freq are
-   downstream calculation-workflow responsibilities.
+   handled during calculator input preparation.
 
 ## Output Contract
 
@@ -99,5 +95,5 @@ Each metadata file records:
 
 - Do not build slabs; use `build-slab-models`.
 - Do not place this gas molecule on a surface; use `place-adsorbates-with-adsorbdiff`.
-- Do not create calculator execution inputs; use the calculation workflow.
+- This skill produces structures and metadata.
 - Do not submit calculations from this skill.

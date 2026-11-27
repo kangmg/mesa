@@ -103,7 +103,7 @@ setup may use these as initial magnetic moments.
    this file's stem, so a generic name causes parallel candidates for the same composition to silently collide downstream.
 5. Run `scripts/validate_bulk_structure.py` on every saved source bulk. Keep
    the JSON result and stop if it is rejected.
-6. Hand the accepted artifact to the calculation workflow for bulk optimization using the requested backend.
+6. Return the bulk structure and its source information.
 
 ## Direct Bulk Creation
 
@@ -126,9 +126,9 @@ The validator requires a finite, nonempty 3D periodic cell, minimum distance
 If only the composition is known and no source structure or crystallographic
 details are available, report the missing structure information.
 
-## Handoff Contract
+## Outputs
 
-Before handing the bulk to optimization, provide:
+Report the available outputs:
 
 - unoptimized bulk structure path and source metadata path;
 - source identifier, including MP id when applicable;
@@ -137,13 +137,12 @@ Before handing the bulk to optimization, provide:
   list every parallel bulk artifact path with the shared candidate-selection
   record instead of a single winner;
 - direct-creation inputs and generator provenance when applicable;
-- passed validation report bound to the structure by SHA-256;
+- validation result when available;
 - preserved site metadata such as `initial_magmoms` when present;
 - caveats or unsupported source metadata.
 
 ## Boundaries
 
 - Do not run bulk optimization, build a slab, or place adsorbates here.
-- Do not hand off a source bulk with a missing or rejected validation result.
 - Do not fetch Materials Project structures from `build-slab-models`.
 - Use the task's backend settings during any subsequent calculation.

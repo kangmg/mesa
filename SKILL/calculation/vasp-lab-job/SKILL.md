@@ -67,7 +67,8 @@ python scripts/make_vasp_inputs.py \
 
 ## Main script
 
-Use `scripts/make_vasp_inputs.py` for actual input generation.
+Use `scripts/make_vasp_inputs.py` for input generation. Set `VASP_PP_PATH` in
+the environment to the local POTCAR directory.
 
 Common options:
 
@@ -77,6 +78,8 @@ Common options:
 --outdir <calculation-directory>
 --project-root <project-root>
 --selected-settings slab_convergence.yml
+--kpts '4 4 1'
+--encut 500
 --profile <parameter-profile>
 --parameters-yaml references/defaults.yaml
 --set key=value                  # repeatable VASP parameter override
@@ -85,7 +88,9 @@ Common options:
 --dry-run-submit                 # copy submit script but do not call qsub
 ```
 
-When the user asks to submit and the input files are valid, run with `--submit`.
+Supply `--kpts` and `--encut` directly to use explicit values. The
+`--selected-settings` file is optional. When the user asks to submit and the
+input files are valid, run with `--submit`.
 Do not check whether compute nodes are currently free; let SGE queue pending
 jobs.
 

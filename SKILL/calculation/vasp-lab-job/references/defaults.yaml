@@ -11,7 +11,6 @@
 # All VASP parameters are ASE Vasp keyword names.
 
 pseudo:
-  vasp_pp_path: /home/shared/programs/vasp/vasp_pp
   setups:
     base: recommended
 

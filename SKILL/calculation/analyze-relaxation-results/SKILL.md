@@ -40,7 +40,7 @@ Verdict:
 - `warn`: converged but suspicious numerics or endpoint geometry.
 - `pass`: converged with no warnings.
 
-For thresholds, output fields, and batch-gate policy, read
+For thresholds and output fields, read
 `references/result-analyzer-policy.md`.
 
 ## Limited UMA relaxation revision
@@ -60,7 +60,7 @@ python3 scripts/decide_relaxation_revision.py \
 
 Refuse warnings, structural anomalies, incomplete/non-passing three-view
 review, and a second continuation. Re-analyze the retry normally. Read
-`references/result-analyzer-policy.md` for the exact gate.
+`references/result-analyzer-policy.md` for the continuation conditions.
 
 Batch runs must keep analyzer stdout/stderr in log files and report only compact
 counts, warning classes, failed IDs, and review queues in user-facing updates.
