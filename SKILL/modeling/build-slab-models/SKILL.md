@@ -3,15 +3,12 @@ name: build-slab-models
 description: Build DFT-ready clean slab models from an already optimized bulk structure with slabuilder. Use when Codex needs to generate Miller-index slabs, choose terminations, tune target atom count, lateral size, slab thickness, supercell repeats, layer counts, fix bottom support layers by fraction or explicit layer count, and validate clean slab quality before clean-slab optimization or adsorbate placement.
 ---
 
-For MESA end-to-end use, read `SKILL/modeling/workflow.md` before applying this skill.
-
 # Build Slab Models
 
 ## Scope
 
 Use this skill to generate clean slabs only. Stop at validated slab files and
-metadata. The higher-level surface order is defined in
-`SKILL/modeling/workflow.md`.
+metadata.
 
 The `slabuilder` engine this skill drives is vendored in this repo
 (`ENVIRONMENT/build_tools/slabuilder`) and installed with the project, so no

@@ -9,13 +9,13 @@ from numpy.typing import NDArray
 def get_frequencies(path: Path) -> NDArray:
     outcar = path / "OUTCAR" if path.is_dir() else path
     frequencies = []
-    with outcar.open(encoding="utf-8", errors="replace") as stream:
+    with outcar.open(encoding="utf-8") as stream:
         for line in stream:
             if "THz" not in line or "f/i" in line:
                 continue
             tokens = line.split()
-            if "cm-1" in tokens:
-                frequencies.append(float(tokens[tokens.index("cm-1") - 1]))
+            cm_index = tokens.index("cm-1")
+            frequencies.append(float(tokens[cm_index - 1]))
     return np.array(frequencies)
 
 def get_zpe_ts(frequencies: NDArray, phase: str, T: float = 298.15, **kwargs):

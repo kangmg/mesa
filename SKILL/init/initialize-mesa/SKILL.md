@@ -3,8 +3,6 @@ name: initialize-mesa
 description: Check and report fresh-clone readiness for this MESA Codex repository. Use when Codex or a user needs to initialize, bootstrap, audit, install core dependencies, synchronize repo skills into CODEX_HOME skills via symlinks, or diagnose the repo before running skills, including Linux/macOS/Windows OS support, uv-first bootstrapping, DEPENDENCY runtime mappings and recipes, DEPENDENCY/.env/API-key presence, optional Hugging Face checkpoint token/cache readiness, repo-local mamba/micromamba setup, vasp-job uv-tool readiness, and skill-specific environment readiness.
 ---
 
-For MESA repository setup use, read `workflow.md` before applying this skill.
-
 # MESA Init
 
 ## Overview

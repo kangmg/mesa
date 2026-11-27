@@ -3,8 +3,6 @@ name: write-title-abstract-keywords-conclusion
 description: Ask an LLM to write manuscript title, abstract, keywords, and conclusion from an already assembled manuscript DOCX. Use when Codex must generate AKC-title text for a computational catalysis manuscript after Introduction, Results and Discussion, Methods, figures, and citations are already drafted, while avoiding citations, figure references, workflow language, unsupported analyses, and new claims.
 ---
 
-For MESA end-to-end use, read `SKILL/manuscript/workflow.md` before applying this skill.
-
 # Title, Abstract, Keywords, Conclusion Writer
 
 ## Scope

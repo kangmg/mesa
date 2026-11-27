@@ -12,9 +12,6 @@ description: >-
 
 ## Overview
 
-For MESA end-to-end use, read `SKILL/analysis/workflow.md` before applying this
-skill.
-
 Use this skill to turn controlled CHGCAR differences into bounded catalyst
 claims. It is for charge-density-difference analysis, not for running VASP,
 relaxing structures, or proving catalytic activity by itself.

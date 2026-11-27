@@ -94,6 +94,13 @@ class EnergyDiagramCliTest(unittest.TestCase):
             with self.assertRaises(FileNotFoundError):
                 calculate_vib.get_frequencies(missing)
 
+    def test_frequency_line_without_wavenumber_unit_is_an_error(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            outcar = Path(tmp) / "custom.OUTCAR"
+            outcar.write_text("1 f = 12.0 THz\n", encoding="utf-8")
+            with self.assertRaises(ValueError):
+                calculate_vib.get_frequencies(outcar)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -11,7 +11,6 @@ from .calculate_vib import get_frequencies, get_zpe_ts
 
 
 def run(reaction: dict, mapping: dict) -> dict[str, float]:
-    slab_G = None
     for m in mapping['entries']:
         if m['species'] == "slab":
             outcar = read(m['outcar'], index='-1')
@@ -67,10 +66,7 @@ def run(reaction: dict, mapping: dict) -> dict[str, float]:
             species_G = species_ref['coefficient'] * species_G
             state_G += species_G
         
-        if slab_count:
-            if slab_G is None:
-                raise ValueError(f"missing slab energy for {label}")
-            state_G += slab_count * slab_G
+        state_G += slab_count * slab_G
         all_G[label] = state_G
     
     reference_G = all_G[reference_label]

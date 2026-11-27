@@ -1,8 +1,8 @@
 # Project
 
 Use the repository's modeling, calculation, analysis, and writing skills for
-computational catalysis work. Read `workflow.md` before starting a study and
-load relevant domain guides explicitly. Keep API keys in `DEPENDENCY/.env`.
+computational catalysis work. Choose the tools and their order based on the
+task. Keep API keys in `DEPENDENCY/.env`.
 
 Use `initialize-mesa` for environment checks, dependency setup, and skill
 symlinks. Take calculation settings and execution constraints from the user's

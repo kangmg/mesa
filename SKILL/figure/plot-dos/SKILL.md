@@ -8,8 +8,6 @@ description: >-
   to visualise density of states for catalyst surfaces or any periodic system.
 ---
 
-For MESA end-to-end use, read `SKILL/figure/workflow.md` before applying this skill.
-
 # DOS / PDOS Plotter
 
 ## Prerequisites — VASP Single-Point Calculation

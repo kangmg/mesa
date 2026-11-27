@@ -26,8 +26,8 @@ See [dependency setup](DEPENDENCY/README.md) for runtime and API-key details.
 ## Run
 
 Give Codex the scientific question, supplied inputs, calculation backend,
-execution limits, and requested output directory. See [workflow.md](workflow.md)
-for basic tool use and [SKILL/](SKILL/) for the available skills.
+execution limits, and requested output directory. Codex chooses the tools and
+their order for the task. See [SKILL/](SKILL/) for the available skills.
 
 ## Citation
 

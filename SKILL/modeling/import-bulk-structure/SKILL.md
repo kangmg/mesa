@@ -3,8 +3,6 @@ name: import-bulk-structure
 description: Resolve bulk crystal source structures before any relaxation or slab generation. Use when Codex needs to import a Materials Project bulk structure, register a local crystallographic bulk file, register an existing code-generated bulk unit cell, or directly create a bulk unit cell from supplied crystallographic instructions while preserving source metadata such as MP identifiers and initial magnetic moments.
 ---
 
-For MESA end-to-end use, read `SKILL/modeling/workflow.md` before applying this skill.
-
 # Import Bulk Structure
 
 ## Scope

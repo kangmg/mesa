@@ -10,8 +10,6 @@ description: >-
   infographics.
 ---
 
-For MESA end-to-end use, read `SKILL/figure/workflow.md` before applying this skill.
-
 # Nature Figure Making
 
 This is a Python-only publication-figure workflow. Use the static contract and

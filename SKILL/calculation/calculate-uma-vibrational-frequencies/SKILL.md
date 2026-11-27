@@ -3,8 +3,6 @@ name: calculate-uma-vibrational-frequencies
 description: Run a minimal MESA calculate-uma-vibrational-frequencies workflow for UMA-based finite-displacement vibrational frequencies from only a POSCAR path, with controller-owned UMA and vibration settings, qsub/local execution, vib.freq output, and structured vibration metadata.
 ---
 
-For MESA end-to-end use, read `SKILL/calculation/workflow.md` before applying this skill.
-
 # mesa-uma-vib-freq
 
 ## Runtime Environment

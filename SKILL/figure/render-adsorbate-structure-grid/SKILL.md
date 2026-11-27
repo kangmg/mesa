@@ -3,8 +3,6 @@ name: render-adsorbate-structure-grid
 description: Build table-style grid figures of slab and adsorbate structures. Renders each structure with a pure-ASE + matplotlib engine (ball-and-stick spheres, bonds drawn only within the adsorbate and between adsorbate-slab, ase-gui-style X on FixAtoms-constrained atoms) in top/side-a/side-b views, crops to the structure, and lays the cells out with row labels, column labels, and horizontal table rules while omitting figure captions/panel labels. Use when Codex needs optimized-structure panels from CIF/POSCAR/traj/extxyz/xyz files, or just to render+crop clean structure PNGs for a manuscript.
 ---
 
-For MESA end-to-end use, read `SKILL/figure/workflow.md` before applying this skill.
-
 # Adsorbate Structure Grid
 
 ## Scope

@@ -4,8 +4,8 @@ To assess the loss of research capability, we removed MESA's research knowledge
 layer. This layer covered literature search and interpretation, hypothesis
 formulation, strategy generation, procedures for executing strategies and
 recording results in a structured form, and evidence-grounded manuscript writing.
-We also revised `workflow.md` and related skill guides to remove instructions
-for the ablated steps.
+We removed the root and domain workflow guides and removed references to them
+from the remaining skills.
 
 ## Repository tree
 
@@ -18,7 +18,7 @@ flowchart TB
     accTitle: Original MESA workflow with ablation cuts
     accDescr: The original workflow links project setup, literature, strategies, recipes, execution management, and manuscript preparation. Cross-ended connections mark dependencies removed by ablation.
 
-    Root["workflow.md<br/>Research entry point"]:::rewritten
+    Root["workflow.md<br/>Research entry point"]:::removed
     Setup["initialize-mesa<br/>Environment setup"]:::retained
     Startup["initialize-project / start-research<br/>project_profile.md"]:::removed
     Literature["SKILL/literature<br/>Search · download · PDF extraction"]:::removed
@@ -33,7 +33,7 @@ flowchart TB
     Outcome["classify-strategy-outcome<br/>next_run"]:::removed
     Update["update-strategies-from-manuscript<br/>Revised strategy queue"]:::removed
 
-    Root --> Setup
+    Root --x Setup
     Root --x Startup
     Startup -- "if evidence is missing" --x Literature
     Startup -- "if a strategy already exists" --x Strategy
@@ -52,7 +52,6 @@ flowchart TB
 
     classDef removed fill:#fce9eb,stroke:#a83249,color:#68172b,stroke-width:2px;
     classDef retained fill:#e4f4ec,stroke:#2d7559,color:#174333;
-    classDef rewritten fill:#eaf0ff,stroke:#4865a9,color:#20396d,stroke-width:2px;
 ```
 
 ## Direct tool use in ablation
@@ -60,24 +59,22 @@ flowchart TB
 ```mermaid
 flowchart TB
     accTitle: Direct tool use after ablation
-    accDescr: The task enters a short workflow that preserves environment setup and direct modeling, calculation, analysis, and manuscript writing skills.
+    accDescr: The agent chooses environment setup, modeling, calculation, analysis, and writing skills as needed for the task.
 
     Task["Task brief<br/>Claim · inputs · backend · budget"]
-    Root["workflow.md<br/>Direct skill use"]:::rewritten
+    Agent["Agent<br/>Chooses tools and their order"]
     Setup["initialize-mesa<br/>Environment setup"]:::retained
     Model["SKILL/modeling<br/>Structures and adsorbates"]:::retained
     Calculation["SKILL/calculation<br/>UMA or VASP"]:::retained
-    Raw["Raw outputs<br/>Structures · energies · logs"]
     Analysis["SKILL/analysis and SKILL/figure<br/>Analysis · tables · plots"]:::retained
     Writing["SKILL/manuscript<br/>Writing · figures · references"]:::retained
 
-    Task --> Root
-    Root --> Setup
-    Root --> Model
-    Model --> Calculation --> Raw
-    Raw --> Analysis --> Writing
-    Raw --> Writing
+    Task --> Agent
+    Agent --> Setup
+    Agent --> Model
+    Agent --> Calculation
+    Agent --> Analysis
+    Agent --> Writing
 
     classDef retained fill:#e4f4ec,stroke:#2d7559,color:#174333;
-    classDef rewritten fill:#eaf0ff,stroke:#4865a9,color:#20396d,stroke-width:2px;
 ```

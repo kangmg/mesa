@@ -8,8 +8,6 @@ description: >-
   deciding whether a clean max-step failure permits one steps-only continuation.
 ---
 
-For MESA end-to-end work, read `SKILL/calculation/workflow.md` first.
-
 # Relaxation Result Analyzer
 
 Use the analyzer only on existing outputs; do not repair structures. Keep its

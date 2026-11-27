@@ -3,8 +3,6 @@ name: assemble-oer-energy-corrections
 description: Assemble and audit OER DFT free-energy corrections for the four-step adsorbate-evolution mechanism using *OH, *O, *OOH, H2/H2O references, an explicit O2 thermodynamic cycle, CHE potential/pH bookkeeping, closure checks, limiting potential, and thermodynamic overpotential. Use for OER energy diagrams, O2 correction, 4.92 eV water-splitting closure, catalyst/motif rankings, or review of duplicated/mis-signed OER corrections. Do not use for lattice-oxygen pathways, barriers, current density, Tafel slopes, or universal *OH/*OOH solvation offsets.
 ---
 
-For MESA end-to-end use, read `SKILL/analysis/workflow.md` first when that file exists.
-
 # OER Energy-Correction Bookkeeper
 
 ## Scope

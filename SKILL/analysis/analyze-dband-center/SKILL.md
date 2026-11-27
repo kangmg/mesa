@@ -11,8 +11,6 @@ description: >-
   plots in the sumo visual style.
 ---
 
-For MESA end-to-end use, read `SKILL/analysis/workflow.md` before applying this skill.
-
 # D-Band Center Analyzer
 
 ## Structure-State Contract
