@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="872" height="1334" viewBox="0 0 872 1334" role="img" aria-labelledby="title description">
+  <title id="title">MESA ablation repository tree</title>
+  <desc id="description">Red paths were deleted, blue paths were modified, and green paths are unchanged. Neutral branches and parent folders show the repository hierarchy.</desc>
+  <style>
+    .background { fill: #ffffff; stroke: #d0d7de; }
+    .neutral { fill: #424a53; }
+    .deleted { fill: #b42338; }
+    .modified { fill: #124fb9; }
+    .retained { fill: #16643d; }
+    text { font: 14px "DejaVu Sans Mono", Consolas, monospace; }
+    @media (prefers-color-scheme: dark) {
+      .background { fill: #0d1117; stroke: #30363d; }
+      .neutral { fill: #b1bac4; }
+      .deleted { fill: #ff8793; }
+      .modified { fill: #8bbcff; }
+      .retained { fill: #7ee2a8; }
+    }
+  </style>
+  <rect class="background" x="0.5" y="0.5" width="871" height="1333" rx="8"/>
+  <text x="22" y="32" class="deleted">(d) = deleted</text>
+  <text x="176" y="32" class="modified">(m) = modified</text>
+  <text x="344" y="32" class="retained">unchanged</text>
+  <g class="neutral" xml:space="preserve">
+    <text x="22" y="65"><tspan class="neutral">.</tspan></text>
+    <text x="22" y="87">├── <tspan class="deleted">(d) .codex/</tspan></text>
+    <text x="22" y="109">├── <tspan class="modified">(m) .gitignore, AGENTS.md, README.md, workflow.md</tspan></text>
+    <text x="22" y="131">├── <tspan class="neutral">DEPENDENCY/</tspan></text>
+    <text x="22" y="153">│   ├── <tspan class="modified">(m) .env.example, README.md, runtimes.yaml</tspan></text>
+    <text x="22" y="175">│   ├── <tspan class="modified">(m) tools/mesa_env_support/</tspan></text>
+    <text x="22" y="197">│   └── <tspan class="retained">bootstrap.sh, bootstrap.ps1, sync_codex_skills.sh</tspan></text>
+    <text x="22" y="219">├── <tspan class="neutral">ENVIRONMENT/</tspan></text>
+    <text x="22" y="241">│   ├── <tspan class="deleted">(d) paper_search/</tspan></text>
+    <text x="22" y="263">│   └── <tspan class="retained">build_tools/, fairchem/, vasp-submit-linker/, manuscript_tools/</tspan></text>
+    <text x="22" y="285">├── <tspan class="deleted">(d) EXTERNAL/paper-search-mcp/</tspan></text>
+    <text x="22" y="307">└── <tspan class="neutral">SKILL/</tspan></text>
+    <text x="22" y="329">    ├── <tspan class="deleted">(d) literature/, strategy/, orchestration/</tspan></text>
+    <text x="22" y="351">    ├── <tspan class="neutral">init/</tspan></text>
+    <text x="22" y="373">    │   ├── <tspan class="deleted">(d) initialize-project/, start-research/</tspan></text>
+    <text x="22" y="395">    │   └── <tspan class="modified">(m) initialize-mesa/SKILL.md</tspan></text>
+    <text x="22" y="417">    ├── <tspan class="neutral">modeling/</tspan></text>
+    <text x="22" y="439">    │   ├── <tspan class="deleted">(d) propose-surface-models-from-literature/</tspan></text>
+    <text x="22" y="461">    │   ├── <tspan class="modified">(m) workflow.md, import-bulk-structure/</tspan></text>
+    <text x="22" y="483">    │   ├── <tspan class="modified">(m) build-slab-models/, build-gas-phase-models/</tspan></text>
+    <text x="22" y="505">    │   └── <tspan class="retained">place-adsorbates-with-adsorbdiff/, place-adsorbates-with-mjs/</tspan></text>
+    <text x="22" y="527">    ├── <tspan class="neutral">calculation/</tspan></text>
+    <text x="22" y="549">    │   ├── <tspan class="modified">(m) workflow.md</tspan></text>
+    <text x="22" y="571">    │   ├── <tspan class="retained">relax-uma-trajectory/, calculate-uma-vibrational-frequencies/</tspan></text>
+    <text x="22" y="593">    │   ├── <tspan class="retained">manage-vasp-jobs/, vasp-lab-job/</tspan></text>
+    <text x="22" y="615">    │   └── <tspan class="retained">analyze-relaxation-results/, balance-reaction-pathway/</tspan></text>
+    <text x="22" y="637">    ├── <tspan class="neutral">analysis/</tspan></text>
+    <text x="22" y="659">    │   ├── <tspan class="modified">(m) workflow.md, construct-energy-diagram/</tspan></text>
+    <text x="22" y="681">    │   ├── <tspan class="retained">evaluate-energy-diagram/, correct-dft-energy/</tspan></text>
+    <text x="22" y="703">    │   └── <tspan class="retained">analyze-dband-center/, charge-flow-analyzer/, assemble-alkaline-her-descriptors/</tspan></text>
+    <text x="22" y="725">    ├── <tspan class="neutral">figure/</tspan></text>
+    <text x="22" y="747">    │   ├── <tspan class="modified">(m) workflow.md</tspan></text>
+    <text x="22" y="769">    │   ├── <tspan class="retained">plot-energy-diagram/, plot-dos/, plot-sabatier-volcano/</tspan></text>
+    <text x="22" y="791">    │   └── <tspan class="retained">render-adsorbate-structure-grid/, create-nature-figure/</tspan></text>
+    <text x="22" y="813">    └── <tspan class="neutral">manuscript/</tspan></text>
+    <text x="22" y="835">        ├── <tspan class="modified">(m) workflow.md, akct/, si/, polish/</tspan></text>
+    <text x="22" y="857">        ├── <tspan class="deleted">(d) figure/, tests/, shared/method_citations.py</tspan></text>
+    <text x="22" y="879">        ├── <tspan class="retained">review/, shared/numeric_precision.py</tspan></text>
+    <text x="22" y="901">        ├── <tspan class="neutral">general/</tspan></text>
+    <text x="22" y="923">        │   ├── <tspan class="deleted">(d) extract-citation-sources/, select-citations/, insert-citations/</tspan></text>
+    <text x="22" y="945">        │   └── <tspan class="modified">(m) insert-section-into-docx/SKILL.md</tspan></text>
+    <text x="22" y="967">        ├── <tspan class="neutral">intro/</tspan></text>
+    <text x="22" y="989">        │   ├── <tspan class="deleted">(d) collect-introduction-evidence/</tspan></text>
+    <text x="22" y="1011">        │   └── <tspan class="neutral">write-introduction-section/</tspan></text>
+    <text x="22" y="1033">        │       ├── <tspan class="deleted">(d) references/, scripts/</tspan></text>
+    <text x="22" y="1055">        │       └── <tspan class="modified">(m) SKILL.md, agents/openai.yaml</tspan></text>
+    <text x="22" y="1077">        ├── <tspan class="neutral">methods/</tspan></text>
+    <text x="22" y="1099">        │   ├── <tspan class="deleted">(d) collect-methods-evidence/</tspan></text>
+    <text x="22" y="1121">        │   └── <tspan class="neutral">write-methods-sections/</tspan></text>
+    <text x="22" y="1143">        │       ├── <tspan class="deleted">(d) references/output_schema.md, scripts/</tspan></text>
+    <text x="22" y="1165">        │       ├── <tspan class="modified">(m) SKILL.md, agents/openai.yaml</tspan></text>
+    <text x="22" y="1187">        │       └── <tspan class="retained">references/methods_formalism_guide.md</tspan></text>
+    <text x="22" y="1209">        └── <tspan class="neutral">results/</tspan></text>
+    <text x="22" y="1231">            ├── <tspan class="deleted">(d) collect-results-evidence/</tspan></text>
+    <text x="22" y="1253">            └── <tspan class="neutral">write-results-section/</tspan></text>
+    <text x="22" y="1275">                ├── <tspan class="deleted">(d) references/, scripts/</tspan></text>
+    <text x="22" y="1297">                └── <tspan class="modified">(m) SKILL.md, agents/openai.yaml</tspan></text>
+  </g>
+</svg>
