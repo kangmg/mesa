@@ -7,6 +7,12 @@
 
 # MESA tool-only baseline
 
+> [!WARNING]
+> This repository is the MESA ablation baseline. MESA's research knowledge
+> layer has been removed to assess the resulting loss of research capability.
+> See [ablation_diagram.md](ablation_diagram.md) for the removed steps and the
+> remaining tool paths.
+
 This branch provides Codex skills for computational catalysis modeling, UMA and
 VASP calculations, result analysis, plotting, and manuscript writing.
 
@@ -22,13 +28,6 @@ See [dependency setup](DEPENDENCY/README.md) for runtime and API-key details.
 Give Codex the scientific question, supplied inputs, calculation backend,
 execution limits, and requested output directory. See [workflow.md](workflow.md)
 for basic tool use and [SKILL/](SKILL/) for the available skills.
-
-## Ablation map
-
-$\color{red}\textsf{(d) = deleted}$ · $\color{blue}\textsf{(m) = modified}$ ·
-$\color{green}\textsf{Retained}$ in the workflow graph
-
-See the [repository tree and workflow graphs](ablation_diagram.md).
 
 ## Citation
 
