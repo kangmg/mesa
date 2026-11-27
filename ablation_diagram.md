@@ -5,6 +5,71 @@ represent calls and artifact handoffs documented by `workflow.md` and the
 domain skills. Red blocks are removed, × ends a cut connection, blue blocks
 are rewritten entry points, and green blocks are retained capabilities.
 
+## Repository tree
+
+$\color{red}\textsf{(d) = deleted}$ · $\color{blue}\textsf{(m) = modified}$
+
+Fully deleted folders are shown once. A folder marked (m) groups its modified
+files. Unmarked leaves show unchanged paths for context.
+
+`.`\
+`├──` $\color{red}\texttt{(d) .codex/}$\
+`├──` $\color{blue}\texttt{(m) .gitignore, AGENTS.md, README.md, workflow.md}$\
+`├──` `DEPENDENCY/`\
+`│   ├──` $\color{blue}\texttt{(m) .env.example, README.md, runtimes.yaml}$\
+`│   ├──` $\color{blue}\texttt{(m) tools/mesa\_env\_support/}$\
+`│   └──` `bootstrap.sh, bootstrap.ps1, sync_codex_skills.sh`\
+`├──` `ENVIRONMENT/`\
+`│   ├──` $\color{red}\texttt{(d) paper\_search/}$\
+`│   └──` `build_tools/, fairchem/, vasp-submit-linker/, manuscript_tools/`\
+`├──` $\color{red}\texttt{(d) EXTERNAL/paper-search-mcp/}$\
+`└──` `SKILL/`\
+`    ├──` $\color{red}\texttt{(d) literature/, strategy/, orchestration/}$\
+`    ├──` `init/`\
+`    │   ├──` $\color{red}\texttt{(d) initialize-project/, start-research/}$\
+`    │   └──` $\color{blue}\texttt{(m) initialize-mesa/SKILL.md}$\
+`    ├──` `modeling/`\
+`    │   ├──` $\color{red}\texttt{(d) propose-surface-models-from-literature/}$\
+`    │   ├──` $\color{blue}\texttt{(m) workflow.md, import-bulk-structure/}$\
+`    │   ├──` $\color{blue}\texttt{(m) build-slab-models/, build-gas-phase-models/}$\
+`    │   └──` `place-adsorbates-with-adsorbdiff/, place-adsorbates-with-mjs/`\
+`    ├──` `calculation/`\
+`    │   ├──` $\color{blue}\texttt{(m) workflow.md}$\
+`    │   ├──` `relax-uma-trajectory/, calculate-uma-vibrational-frequencies/`\
+`    │   ├──` `manage-vasp-jobs/, vasp-lab-job/`\
+`    │   └──` `analyze-relaxation-results/, balance-reaction-pathway/`\
+`    ├──` `analysis/`\
+`    │   ├──` $\color{blue}\texttt{(m) workflow.md, construct-energy-diagram/}$\
+`    │   ├──` `evaluate-energy-diagram/, correct-dft-energy/`\
+`    │   └──` `analyze-dband-center/, charge-flow-analyzer/, assemble-alkaline-her-descriptors/`\
+`    ├──` `figure/`\
+`    │   ├──` $\color{blue}\texttt{(m) workflow.md}$\
+`    │   ├──` `plot-energy-diagram/, plot-dos/, plot-sabatier-volcano/`\
+`    │   └──` `render-adsorbate-structure-grid/, create-nature-figure/`\
+`    └──` `manuscript/`\
+`        ├──` $\color{blue}\texttt{(m) workflow.md, akct/, si/, polish/}$\
+`        ├──` $\color{red}\texttt{(d) figure/, tests/, shared/method\_citations.py}$\
+`        ├──` `review/, shared/numeric_precision.py`\
+`        ├──` `general/`\
+`        │   ├──` $\color{red}\texttt{(d) extract-citation-sources/, select-citations/, insert-citations/}$\
+`        │   └──` $\color{blue}\texttt{(m) insert-section-into-docx/SKILL.md}$\
+`        ├──` `intro/`\
+`        │   ├──` $\color{red}\texttt{(d) collect-introduction-evidence/}$\
+`        │   └──` `write-introduction-section/`\
+`        │       ├──` $\color{red}\texttt{(d) references/, scripts/}$\
+`        │       └──` $\color{blue}\texttt{(m) SKILL.md, agents/openai.yaml}$\
+`        ├──` `methods/`\
+`        │   ├──` $\color{red}\texttt{(d) collect-methods-evidence/}$\
+`        │   └──` `write-methods-sections/`\
+`        │       ├──` $\color{red}\texttt{(d) references/output\_schema.md, scripts/}$\
+`        │       ├──` $\color{blue}\texttt{(m) SKILL.md, agents/openai.yaml}$\
+`        │       └──` `references/methods_formalism_guide.md`\
+`        └──` `results/`\
+`            ├──` $\color{red}\texttt{(d) collect-results-evidence/}$\
+`            └──` `write-results-section/`\
+`                ├──` $\color{red}\texttt{(d) references/, scripts/}$\
+`                └──` $\color{blue}\texttt{(m) SKILL.md, agents/openai.yaml}$
+
 ## Original workflow with the cuts marked
 
 ```mermaid

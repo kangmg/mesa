@@ -23,6 +23,13 @@ Give Codex the scientific question, supplied inputs, calculation backend,
 execution limits, and requested output directory. See [workflow.md](workflow.md)
 for basic tool use and [SKILL/](SKILL/) for the available skills.
 
+## Ablation map
+
+$\color{red}\textsf{(d) = deleted}$ · $\color{blue}\textsf{(m) = modified}$ ·
+$\color{green}\textsf{Retained}$ in the workflow graph
+
+See the [repository tree and workflow graphs](ablation_diagram.md).
+
 ## Citation
 
 The MESA paper is in preparation. A citation will be added here on publication.
