@@ -9,8 +9,6 @@ description: >-
   grounded only in the local Nature reviewer source basis.
 ---
 
-For MESA end-to-end use, read `SKILL/manuscript/workflow.md` before applying this skill.
-
 # Nature Reviewer Assessment Skill
 
 Use this skill to simulate a `Nature`-style reviewer assessment package from the referee side.

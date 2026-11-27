@@ -3,8 +3,6 @@ name: polish-manuscript-notation
 description: Apply configured scientific notation formatting to manuscript DOCX text. Use when Codex must convert plain tokens such as MoS2, Delta G_H, or project-specific descriptors into DOCX subscript/superscript runs from a JSON ruleset, without hardcoding chemistry terms in the skill.
 ---
 
-For MESA end-to-end use, read `SKILL/manuscript/workflow.md` before applying this skill.
-
 # Manuscript Notation Polisher
 
 ## Scope

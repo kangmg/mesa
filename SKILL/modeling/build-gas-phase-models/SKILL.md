@@ -3,8 +3,6 @@ name: build-gas-phase-models
 description: Build neutral isolated gas-phase molecule structures for reaction reference calculations. Use when Codex needs POSCAR/metadata files for gas reservoirs or gas products such as H2(g), H2O(g), CO(g), CO2(g), NH3(g), NOx species, alcohols, or SMILES-defined molecules before downstream relaxation, static-energy, or frequency handoff.
 ---
 
-For MESA end-to-end use, read `SKILL/modeling/workflow.md` before applying this skill.
-
 # Build Gas Phase Models
 
 ## Scope
@@ -15,8 +13,6 @@ in a slightly asymmetric orthorhombic cell, writes POSCAR and metadata, and stop
 
 Do not use this skill for slab generation, adsorbate placement on surfaces,
 calculation input generation, relaxation, static energies, or frequency calculations.
-Use the calculation workflow after this skill for calculation setup under the
-active project profile's calculation policy.
 
 ## Charge and Spin Boundary
 
@@ -33,10 +29,8 @@ set spin-related inputs without guessing:
 - a `dipole_hint` block flags likely-polar molecules (recommending
   a dipole correction in downstream calculation setup).
 
-The calculation workflow owns the final calculator-specific inputs. It may read
-`spin_reference`/`dipole_hint` and translate them under the active project
-profile's calculation policy. This skill never writes calculator execution
-inputs.
+When preparing calculator inputs, use `spin_reference` and `dipole_hint` for
+the requested backend. This skill produces structures and metadata.
 
 ## Quick Start
 
@@ -80,8 +74,7 @@ mamba run -n modeling python scripts/build_gas_phase_model.py \
 3. Put the molecule in a `20 20 21` Å orthorhombic cell by default, centered in the cell.
 4. Write POSCAR and JSON metadata.
 5. Validate atom count, cell size, and minimum intramolecular distance.
-6. Report paths and explicitly state that charge/spin and relax/freq are
-   downstream calculation-workflow responsibilities.
+6. Report the output paths and spin metadata for downstream calculations.
 
 ## Output Contract
 
@@ -102,5 +95,5 @@ Each metadata file records:
 
 - Do not build slabs; use `build-slab-models`.
 - Do not place this gas molecule on a surface; use `place-adsorbates-with-adsorbdiff`.
-- Do not create calculator execution inputs; use the calculation workflow.
+- This skill produces structures and metadata.
 - Do not submit calculations from this skill.

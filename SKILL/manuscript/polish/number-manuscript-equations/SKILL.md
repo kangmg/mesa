@@ -3,8 +3,6 @@ name: number-manuscript-equations
 description: Add configured equation numbers to manuscript DOCX equations, including one number for a multi-line equation group. Use when Codex must number displayed equations near the end of manuscript polishing without hardcoding project-specific equation text.
 ---
 
-For MESA end-to-end use, read `SKILL/manuscript/workflow.md` before applying this skill.
-
 # Manuscript Equation Number Polisher
 
 ## Scope

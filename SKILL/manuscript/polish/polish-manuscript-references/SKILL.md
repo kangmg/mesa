@@ -3,8 +3,6 @@ name: polish-manuscript-references
 description: Normalize a scoped numeric bibliography in a DOCX from a project-provided JSON config while preserving Word equations, figures, package parts, and content outside the reference section. Use when Codex must replace existing numbered reference paragraphs, support split Word runs or configurable numeric-label syntax, and avoid renumbering in-text citations or modifying Supporting Information references.
 ---
 
-For MESA end-to-end use, read `SKILL/manuscript/workflow.md` before applying this skill.
-
 # Manuscript Reference Polisher
 
 ## Scope

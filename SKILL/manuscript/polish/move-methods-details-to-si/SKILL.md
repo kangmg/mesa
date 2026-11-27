@@ -3,8 +3,6 @@ name: move-methods-details-to-si
 description: Compress detailed Methods text after Supporting Information insertion by moving geometry-optimization details out of the main manuscript Methods section. Use when Codex must remove duplicate detailed DFT/relaxation setup from main text while preserving a concise Methods bridge to Supporting Information in a DOCX.
 ---
 
-For MESA end-to-end use, read `SKILL/manuscript/workflow.md` before applying this skill.
-
 # Methods To SI Mover
 
 ## Scope
@@ -25,8 +23,8 @@ Run:
 
 ```bash
 python SKILL/manuscript/polish/move-methods-details-to-si/scripts/move_methods_details_to_si.py \
-  --input-docx project/<project>/manuscript/<strategy>/<manuscript_with_si>.docx \
-  --output-docx project/<project>/manuscript/<strategy>/<manuscript_methods_moved>.docx \
+  --input-docx project/<project>/<manuscript_with_si>.docx \
+  --output-docx project/<project>/<manuscript_methods_moved>.docx \
   --config optional_methods_to_si_config.json
 ```
 

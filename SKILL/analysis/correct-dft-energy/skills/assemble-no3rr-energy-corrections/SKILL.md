@@ -3,8 +3,6 @@ name: assemble-no3rr-energy-corrections
 description: Assemble and audit NO3RR DFT free-energy corrections for single-N nitrate-to-ammonia pathways using an HNO3(g) molecular reference, explicit HNO3 gas-to-liquid and liquid-to-NO3-(aq)+H+ thermodynamic-cycle terms, species-specific gas-phase corrections, CHE potential/pH bookkeeping, pathway closure, limiting potential, and bounded rankings. Use for Calle-Vallejo-style nitrate adsorption corrections, the literature 1.12 eV HNO3 error, NO3/NO2/NO/NHxOy pathways, or comparison of NHO/NOH-free routes. Do not apply one correction to every NOx species, substitute vacuum NO3- for aqueous nitrate, or infer kinetics/selectivity from endpoint thermodynamics.
 ---
 
-For MESA end-to-end use, read `SKILL/analysis/workflow.md` first when that file exists.
-
 # NO3RR Energy-Correction Bookkeeper
 
 ## Scope

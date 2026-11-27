@@ -86,10 +86,6 @@ SKILL/**/tests/
 !SKILL/analysis/construct-energy-diagram/tests/**
 !SKILL/calculation/analyze-relaxation-results/tests/
 !SKILL/calculation/analyze-relaxation-results/tests/**
-!SKILL/orchestration/generate-explicit-calculation-recipe/tests/
-!SKILL/orchestration/generate-explicit-calculation-recipe/tests/**
-!SKILL/manuscript/tests/
-!SKILL/manuscript/tests/**
 SKILL/**/tests/__pycache__/
 
 # Local manuscript review trials

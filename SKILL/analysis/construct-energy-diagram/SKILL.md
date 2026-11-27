@@ -3,8 +3,6 @@ name: construct-energy-diagram
 description: Construct reaction free-energy profiles from balanced reaction pathway metadata, calculation registry maps, and VASP OUTCAR thermochemistry inputs. Use when Codex needs relative catalyst reaction-state free energies from reaction.json and map.json inputs.
 ---
 
-For MESA end-to-end use, read `SKILL/analysis/workflow.md` before applying this skill.
-
 Energy Diagram Construction Skill
 
 Purpose
@@ -35,8 +33,9 @@ mamba run -n modeling python -m MYSKILL.tools.start \
   --output ../../../project/<project_name>/analysis/relative_free_energies.json
 ```
 
-The runner reads only the two supplied JSON files and the OUTCAR paths declared
-inside `map.json`; it has no built-in author-local data paths.
+The runner reads the two supplied JSON files and the OUTCAR paths declared
+inside `map.json`. Relative OUTCAR paths are resolved from the current
+working directory.
 
 ⸻
 

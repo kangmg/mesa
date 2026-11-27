@@ -3,8 +3,6 @@ name: write-title-abstract-keywords-conclusion
 description: Ask an LLM to write manuscript title, abstract, keywords, and conclusion from an already assembled manuscript DOCX. Use when Codex must generate AKC-title text for a computational catalysis manuscript after Introduction, Results and Discussion, Methods, figures, and citations are already drafted, while avoiding citations, figure references, workflow language, unsupported analyses, and new claims.
 ---
 
-For MESA end-to-end use, read `SKILL/manuscript/workflow.md` before applying this skill.
-
 # Title, Abstract, Keywords, Conclusion Writer
 
 ## Scope
@@ -25,7 +23,7 @@ figures, or revise the manuscript body.
 Default output:
 
 ```text
-project/<project>/strategy_execution/<strategy_id>_akctitle/text/
+abstract-and-conclusion/
   manuscript_context.json
   manuscript_context.md
   llm_prompt.txt
@@ -44,8 +42,7 @@ Run:
 
 ```bash
 python SKILL/manuscript/akct/write-title-abstract-keywords-conclusion/scripts/write_abstract_keywords_conclusion.py \
-  --manuscript-docx project/<project>/manuscript/<strategy_id>/<manuscript>.docx \
-  --strategy-id <strategy_id>
+  --manuscript-docx project/<project>/manuscript.docx
 ```
 
 Use `--no-llm` only for smoke testing. Normal use requires

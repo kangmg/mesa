@@ -3,8 +3,6 @@ name: manage-vasp-jobs
 description: Prepare, submit, and track cost-aware VASP calculations on the SGE HPC login node using the `vasp-job` CLI, including conservative parameter handling, refinement-default actual calculation settings, and explicit quick-screening settings. Use when the user wants to dry-run or run a VASP relaxation/SCF job, queue a job with qsub, choose screening versus refinement settings, check job status, list recent jobs, or inspect result files on the cluster.
 ---
 
-For MESA end-to-end use, read `SKILL/calculation/workflow.md` before applying this skill.
-
 # vasp-job
 
 `vasp-job` is a globally installed CLI (via `uv tool`) that runs on the HPC login

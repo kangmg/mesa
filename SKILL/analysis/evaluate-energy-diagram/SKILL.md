@@ -3,8 +3,6 @@ name: evaluate-energy-diagram
 description: Evaluate DFT reaction-energy tables from CSV or dictionary input. When a multi-catalyst diagram does not identify one unique thermodynamic best catalyst, including mixed downhill/uphill or tied cases, hand off to SKILL/figure/plot-sabatier-volcano for Sabatier analysis.
 ---
 
-For MESA end-to-end use, read `SKILL/analysis/workflow.md` before applying this skill.
-
 # Evaluate Energy Diagram
 
 Use this skill when the user provides DFT reaction-coordinate energies for electrocatalyst performance evaluation.
